@@ -21,7 +21,7 @@ public class Function
     // Used this website to learn about .gitignore https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/
     // Copied the code from the example code provided
 
-    public string FunctionHandler(string input, ILambdaContext context)
+    public string FunctionHandler(object input, ILambdaContext context)
     {
         dynamic json = JsonConvert.DeserializeObject<dynamic>(input.ToString());
         
